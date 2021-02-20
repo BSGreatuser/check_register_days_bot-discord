@@ -1,3 +1,6 @@
+'''
+!명령어
+'''
 import discord
 import time
 import json
