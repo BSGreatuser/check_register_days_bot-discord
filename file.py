@@ -11,7 +11,10 @@ admin = '관리자 닉'
 def times():
     return time.time()
 
-client = discord.Client()
+intents = discord.Intents.default()
+intents.members = True
+
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_connect():
